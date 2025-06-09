@@ -1,0 +1,130 @@
+/* Centraliza todo o body na tela */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'MedievalSharp', cursive;
+  background: linear-gradient(to bottom right, #2e1f0f, #4d392d);
+  color: #f5deb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center; /* texto centralizado */
+}
+
+/* Container centralizado com flexbox */
+.container {
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px #000000cc;
+  max-width: 600px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Título com cor vibrante e sombra */
+h1 {
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  color: #ffcc33;
+  text-shadow: 2px 2px 5px #4a2c0a;
+}
+
+/* Label com destaque */
+label {
+  font-size: 1.2em;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #f0d88b;
+}
+
+/* Input estilizado */
+input[type="number"] {
+  padding: 12px;
+  font-size: 1.1em;
+  width: 100%;
+  margin-bottom: 25px;
+  border: 2.5px solid #d2a63f;
+  border-radius: 12px;
+  background-color: #3f2e17;
+  color: #fff8dc;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus {
+  border-color: #ffc107;
+  outline: none;
+}
+
+/* Resultado com colunas separadas */
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+/* Cada poção */
+.potion {
+  background-color: #6b4b33;
+  padding: 18px 20px;
+  border-radius: 14px;
+  border: 1.5px solid #d2a63f;
+  box-shadow: 0 0 15px #00000088;
+  transition: transform 0.2s, background-color 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.potion:hover {
+  transform: scale(1.05);
+  background-color: #7c5d41;
+}
+
+/* Título da poção */
+.potion h3 {
+  margin: 0 0 10px 0;
+  color: #ffd54f;
+  font-size: 1.5em;
+  text-shadow: 1px 1px 3px #3e2c12;
+}
+
+/* Textos dentro da poção */
+.potion p {
+  margin: 6px 0;
+  font-size: 1.1em;
+  color: #f5deb3;
+}
+
+/* Destaques de preços mais baratos */
+.cheaper-store {
+  color: #a0e600;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #274e00;
+}
+
+.cheaper-npc {
+  color: #66ccff;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #004466;
+}
+.copy-btn {
+  background-color: #d2a63f;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  color: #3f2e17;
+  transition: background-color 0.3s;
+}
+
+.copy-btn:hover {
+  background-color: #ffc107;
+}
